@@ -1,0 +1,43 @@
+{{define "footer" }}
+
+<footer class="footer bg-light" id="contact">
+    <div class="container  pt-8">
+        <div class="row">
+            <div class="col-md-3 mx-auto mb-2">
+                <h6 class="para text-dark">Molaetsa</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:120px; height:2px;">
+                <p class="mt-2 text-lead">I am eager to learn and work on exciting project.
+                    Kindly reach me if you have an idea you wish to see materialize. I am also open to a job offer.
+                    Get my <a href="../static/file/Arnold_resume.pdf" download="Resume">Resume here</a>
+                </p>
+            </div>
+
+            <div class="col-md-2 mx-auto mb-2">
+                <h6 class="para -text-uppercase font-weight-boldtext-dark">Contact</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:80px; height: 2px;">
+                <ul class="list-unstyled">
+                    <li class="my-2"><a href="mailto:learnwitharnold@gmail.com"><i
+                                class="fa fa-envelop fa-2x text-dark mr-4">Email</i></a></li>
+                    <li class="my-2"><a href="#" class="phone"><i class="far fa-phone fa-2x text-dark mr-4">
+                                Phone: 081 403 8049</i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mx-auto mb-4 social">
+                <h6 class="para text-uppercase font-weight-bold text-dark">Social Media</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:110px; height:2px;">
+                <ul class="list-unstyled">
+                    <a href="https://www.youtube.com/channel/UCDjT8Mpx4vOe-HrA1EakzhQ"><i
+                            class="fab fa-youtube fa-2x text-dark mr-3"></i>YouTube</a> |
+                    <a href="https://www.linkedin.com/in/arnold-mohale-48a58a159"><i
+                            class="fab fa-linkedin fa-2x text-dark mr-3"></i>LinkedIn</a> |
+                    <a href="https://www.twitter.com/ThatDudeSprout"><i
+                            class="fab fa-twitter fa-2x text-dark mr-3"></i>twitter</a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <p class="text-center"> &copy; {{.CurrentYear}} All Rights Reserved</p>
+</footer>
+{{end}}

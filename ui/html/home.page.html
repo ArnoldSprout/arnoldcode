@@ -1,0 +1,118 @@
+{{template "base" .}}
+{{define "title"}}Home{{end}}
+
+
+{{define "body"}}
+
+<div class="site-main">
+    <!--   START BANNER AREA -->
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-8 col-sm-12 site-title py-4">
+                    <img src="/static/img/exe.png" alt="banner" class="img-fluid" width="100%" height="100%" />
+
+                    <hr class="line py-8" width="10em" />
+                    <h3 class="title-text">Howzit,</h3>
+                    <h1 class="title-text text-uppercase">I am <mark>Arnold</mark></h1>
+
+                    <h4 class="title-text text-uppercase py-1">Junior Software Developer</h4>
+                    <div class="site-button">
+                        <div class="d-flex flex-row flex-wrap">
+                            <a href="#contact" type="button"
+                                class="btn button btn-outline-primary mr-4 text-uppercase">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-lg-6 col-md-12 col-sm-8 banner-image">
+                    <img src="/static/img/exe.png" alt="banner" class="img-fluid" width="100%" height="100%" />
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!--   END BANNER AREA -->
+    <!--  START ABOUT AREA -->
+    <section class="about-area" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-8">
+                    <div class="about-image">
+                        <img src="/static/img/dab1.png" alt="about image" class="img-fluid" width="100%" height="100%">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-8 about-title">
+                    <h2 class="text-uppercase pt-5">
+                        <span>A brief</span>
+                        <span>intro about</span>
+                        <span>what i do</span>
+                    </h2>
+                    <div class="paragraph py-4 justify-content-center">
+                        <p class="para">
+                            I am a develeoper, specializing in database driven web apllications, using various
+                            technologies such as golang.
+                        </p>
+                        <p class="para">
+                            I am passionate about programming, hence, I also have a YouTube channel focused on
+                            various programming topics.
+                            The channel is new and picking up!
+                            Kindly check it out and whilst you are there please give it a subscribe and also hit
+                            that like button and bell notification so that you do not miss out.
+                        </p>
+                    </div>
+                    <a href="https://www.youtube.com/channel/UCDjT8Mpx4vOe-HrA1EakzhQ" type="button"
+                        class="btn button btn-outline-danger mr-4 text-uppercase">YouTube channel</a>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+    </section>
+    <!--  END ABOUT AREA   -->
+    <!--  START OF PROJECT AREA-->
+    <section class="project-area" id="portfolio">
+        <h2 class="text-title text-uppercase text-center pt-3">Latest projects</h2>
+        <h4 class="text-lead mt-2 p-2 text-center">Used various languages to develop the following programs. Check them
+            out!
+        </h4>
+        <!--table projects-->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Projects</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>WebRTC Video Chat App</td>
+                        <td>Used SimpleWebRTC to build a WebRTC video chat application with messaging features</td>
+                        <td><a href="https://github.com/ArnoldSprout/webRTC">Video Chat App</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>SPA </td>
+                        <td>Used JavaScript to build a single page application without a framework</td>
+                        <td><a href="https://github.com/AroldSprout/spa">Single Page App</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>ToDo App</td>
+                        <td>Created a To-Do list application using Golang</td>
+                        <td><a href="https://github.com/ArnoldSprout/todoApp">ToDo Application</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <!--END PROJECT AREA-->
+</div>
+
+{{end}}

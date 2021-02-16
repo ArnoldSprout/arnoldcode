@@ -1,0 +1,75 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>{{template "title". }} -ArnoldCodes</title>
+    <link rel="shortcut icon" href="/static/img/exe.png" type="image/png" />
+    <!--bootstrap css-->
+    <link
+      rel="stylesheet"
+      href="/static/bootstrap-4.6.0/css/bootstrap.min.css"
+    />
+    <!--Main css-->
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Area -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/"><strong>Arnold Codes /></strong></a>
+      <!--Start button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!--End button -->
+    </nav>
+    <!--End Header Area -->
+
+    {{template "body" .}}
+    <!--Footer -->
+    <br /><br /><br /><br />
+    {{template "footer" .}}
+    <!--scripts files-->
+    <!--jquery-->
+    <script src="/static/js/jquery 3.5.1.js"></script>
+    <!--bootstrap.min.js-->
+    <script src="/static/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+    <!--main.js-->
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
+{{end}}
